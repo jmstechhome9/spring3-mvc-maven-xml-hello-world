@@ -9,7 +9,7 @@ pipeline {
 
     stage('artifact') {
       steps {
-        sh 'archiveArtifacts \'target/*.war\''
+        archiveArtifacts 'target/*.war'
       }
     }
 
