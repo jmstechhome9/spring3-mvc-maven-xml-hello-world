@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('artifact') {
+      steps {
+        sh 'archiveArtifacts \'target/*.war\''
+      }
+    }
+
   }
 }
